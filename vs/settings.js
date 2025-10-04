@@ -44,20 +44,20 @@ function load_settings(){
     else{ // If no controls are stored, use default
         console.log("Default controls used");
         controls = {
-            "DAS": 100,
-            "ARR": 30,
+            "DAS": 83,
+            "ARR": 0,
             "SDARR": 0,
             "Move_Down": 'ArrowDown',
             "Move_Left": 'ArrowLeft',
             "Move_Right": 'ArrowRight',
-            "Rotate_CW": 'ArrowUp',
+            "Rotate_CW": 'KeyZ',
             "Rotate_CW_Secondary": 'None',
-            "Rotate_CCW": 'KeyZ',
+            "Rotate_CCW": 'ArrowUp',
             "Rotate_CCW_Secondary": 'None',
-            "Rotate_180": 'KeyA',
-            "Hold": 'ShiftLeft',
+            "Rotate_180": 'KeyX',
+            "Hold": 'KeyC',
             "Hard_Drop": 'Space',
-            "Reset": 'KeyR'
+            "Reset": 'Digit4'
         };
     }
 
@@ -67,7 +67,7 @@ function load_settings(){
         ppsLimit = botSettings["PPS"];
         depth = botSettings["Depth"];
     } else{
-        ppsLimit = 1;
+        ppsLimit = 3;
         depth = 10;
     }
 }
